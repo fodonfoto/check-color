@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Tokens Guideline Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Design Tokens Guideline Generator</h1>
+        <p>Require format: json, css, swift, xml, dart</p>
+        <input type="file" id="fileInput">
+        <button id="generateButton">Generate Guideline</button>
+    </div>
+    <div id="guidelineOutput" class="guideline-output"></div>
+
+    <div class="container">
+        <h2>Contrast Checker</h2>
+        <div class="contrast-checker">
+            <label for="textColor">Text color</label>
+            <input type="color" id="textColor" name="textColor" value="#000000">
+            <label for="bgColor">Background color</label>
+            <input type="color" id="bgColor" name="bgColor" value="#ffffff">
+            <button id="checkContrastButton">Check Contrast</button>
+        </div>
+        <div id="contrastResult" class="contrast-result">
+            <!-- <h3>Contrast</h3>
+            <div class="how-does-it-work">
+              <h2>How does it work?</h2>
+              <p>This tool follows the Web Content Accessibility Guidelines (WCAG), which are a series of recommendations for making the web more accessible.</p>
+              <p>Regarding colors, the standard defines two levels of contrast ratio: AA (minimum contrast) and AAA (enhanced contrast).</p>
+              <p>The level AA requires a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text (at least 18pt) or bold text.</p>
+              <p>The level AAA requires a contrast ratio of at least 7:1 for normal text and 4.5:1 for large text or bold text.</p>
+            </div> -->
+            <div id="contrastRatio"></div>
+            <div id="contrastRating"></div>
+            <div id="contrastDescription"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

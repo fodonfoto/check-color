@@ -1,0 +1,740 @@
+:root {
+    /* primitive */
+    --bbt-color-base-black: #0c0e0c;
+    --bbt-color-base-white: #ffffff;
+    --bbt-color-blue-100: #e6f5fe;
+    --bbt-color-blue-1000: #06a0f9;
+    --bbt-color-blue-1100: #0690e0;
+    --bbt-color-blue-1200: #0580c7;
+    --bbt-color-blue-1300: #0470ae;
+    --bbt-color-blue-1400: #045895;
+    --bbt-color-blue-1500: #035585;
+    --bbt-color-blue-1600: #034063;
+    --bbt-color-blue-1700: #02304b;
+    --bbt-color-blue-1800: #012032;
+    --bbt-color-blue-1900: #011019;
+    --bbt-color-blue-200: #cdecfe;
+    --bbt-color-blue-300: #b4e2fd;
+    --bbt-color-blue-400: #9cd9fc;
+    --bbt-color-blue-500: #83cffc;
+    --bbt-color-blue-600: #6ac6fb;
+    --bbt-color-blue-700: #51bcfb;
+    --bbt-color-blue-800: #38b3fa;
+    --bbt-color-blue-900: #1fa9f9;
+    --bbt-color-brand-100: #e5fff2;
+    --bbt-color-brand-1000: #00ff80;
+    --bbt-color-brand-1100: #00e673;
+    --bbt-color-brand-1200: #00cc66;
+    --bbt-color-brand-1300: #00b359;
+    --bbt-color-brand-1400: #00994d;
+    --bbt-color-brand-1500: #008040;
+    --bbt-color-brand-1600: #006633;
+    --bbt-color-brand-1700: #004d26;
+    --bbt-color-brand-1800: #00331a;
+    --bbt-color-brand-1900: #001a0d;
+    --bbt-color-brand-200: #ccffe5;
+    --bbt-color-brand-300: #b3ffd9;
+    --bbt-color-brand-400: #99ffcc;
+    --bbt-color-brand-500: #80ffbf;
+    --bbt-color-brand-600: #66ffb2;
+    --bbt-color-brand-700: #4dffa6;
+    --bbt-color-brand-800: #4dffa6;
+    --bbt-color-brand-900: #1aff8c;
+    --bbt-color-error-100: #fde8e7;
+    --bbt-color-error-1000: #ec1713;
+    --bbt-color-error-1100: #d51411;
+    --bbt-color-error-1200: #bd120f;
+    --bbt-color-error-1300: #a5100d;
+    --bbt-color-error-1400: #8d0e0b;
+    --bbt-color-error-1500: #750b0a;
+    --bbt-color-error-1600: #5e0908;
+    --bbt-color-error-1700: #470706;
+    --bbt-color-error-1800: #2f0504;
+    --bbt-color-error-1900: #170202;
+    --bbt-color-error-200: #fbd1d0;
+    --bbt-color-error-300: #f9b9b8;
+    --bbt-color-error-400: #f7a2a1;
+    --bbt-color-error-500: #f58b89;
+    --bbt-color-error-600: #f47471;
+    --bbt-color-error-700: #f25c5a;
+    --bbt-color-error-800: #f04542;
+    --bbt-color-error-900: #ee2e2b;
+    --bbt-color-gray-alpha-100: #0c0e0cf0;
+    --bbt-color-gray-alpha-200: #0c0e0ceb;
+    --bbt-color-gray-alpha-25: #0c0e0cfa;
+    --bbt-color-gray-alpha-300: #0c0e0ccc;
+    --bbt-color-gray-alpha-400: #0c0e0c8f;
+    --bbt-color-gray-alpha-50: #0c0e0cf5;
+    --bbt-color-gray-alpha-500: #0c0e0c80;
+    --bbt-color-gray-alpha-600: #0c0e0c59;
+    --bbt-color-gray-alpha-700: #0c0e0c29;
+    --bbt-color-gray-alpha-800: #0c0e0c14;
+    --bbt-color-gray-alpha-900: #0c0e0c0a;
+    --bbt-color-gray-alpha-950: #0c0e0c00;
+    --bbt-color-gray-dark-mode-100: #f2f2f2;
+    --bbt-color-gray-dark-mode-1000: #7f7f7f;
+    --bbt-color-gray-dark-mode-1100: #737373;
+    --bbt-color-gray-dark-mode-1200: #666666;
+    --bbt-color-gray-dark-mode-1300: #595959;
+    --bbt-color-gray-dark-mode-1400: #4c4c4c;
+    --bbt-color-gray-dark-mode-1500: #404040;
+    --bbt-color-gray-dark-mode-1600: #333333;
+    --bbt-color-gray-dark-mode-1700: #262626;
+    --bbt-color-gray-dark-mode-1800: #191919;
+    --bbt-color-gray-dark-mode-1900: #0d0d0d;
+    --bbt-color-gray-dark-mode-200: #e5e5e5;
+    --bbt-color-gray-dark-mode-300: #d9d9d9;
+    --bbt-color-gray-dark-mode-400: #cbcbcb;
+    --bbt-color-gray-dark-mode-500: #bfbfbf;
+    --bbt-color-gray-dark-mode-600: #b2b2b2;
+    --bbt-color-gray-dark-mode-700: #a6a6a6;
+    --bbt-color-gray-dark-mode-800: #989898;
+    --bbt-color-gray-dark-mode-900: #8c8c8c;
+    --bbt-color-gray-light-mode-100: #f1f3f2;
+    --bbt-color-gray-light-mode-1000: #77887d;
+    --bbt-color-gray-light-mode-1100: #6b7b70;
+    --bbt-color-gray-light-mode-1200: #5f6d64;
+    --bbt-color-gray-light-mode-1300: #535f57;
+    --bbt-color-gray-light-mode-1400: #47524b;
+    --bbt-color-gray-light-mode-1500: #3b443e;
+    --bbt-color-gray-light-mode-1600: #2f3732;
+    --bbt-color-gray-light-mode-1700: #242925;
+    --bbt-color-gray-light-mode-1800: #181b19;
+    --bbt-color-gray-light-mode-1900: #0c0e0c;
+    --bbt-color-gray-light-mode-200: #e4e7e5;
+    --bbt-color-gray-light-mode-300: #d6dbd8;
+    --bbt-color-gray-light-mode-400: #c8d0cb;
+    --bbt-color-gray-light-mode-50: #fbfbfb;
+    --bbt-color-gray-light-mode-500: #bbc4be;
+    --bbt-color-gray-light-mode-600: #adb8b1;
+    --bbt-color-gray-light-mode-700: #a0aca4;
+    --bbt-color-gray-light-mode-800: #92a097;
+    --bbt-color-gray-light-mode-900: #84948a;
+    --bbt-color-orange-100: #fffaf7;
+    --bbt-color-orange-1000: #cc5e12;
+    --bbt-color-orange-1100: #b55410;
+    --bbt-color-orange-1200: #a04a0e;
+    --bbt-color-orange-1300: #8d410d;
+    --bbt-color-orange-1400: #78380b;
+    --bbt-color-orange-1500: #652e09;
+    --bbt-color-orange-1600: #532707;
+    --bbt-color-orange-1700: #401d06;
+    --bbt-color-orange-1800: #2f1504;
+    --bbt-color-orange-1900: #1d0d03;
+    --bbt-color-orange-200: #feede1;
+    --bbt-color-orange-300: #fdd9bf;
+    --bbt-color-orange-400: #fdc7a2;
+    --bbt-color-orange-500: #fcb380;
+    --bbt-color-orange-600: #fb9f60;
+    --bbt-color-orange-700: #fa893a;
+    --bbt-color-orange-800: #f77216;
+    --bbt-color-orange-900: #e06814;
+    --bbt-color-pink-100: #fef9fc;
+    --bbt-color-pink-1000: #da438d;
+    --bbt-color-pink-1100: #c23b7e;
+    --bbt-color-pink-1200: #ac3470;
+    --bbt-color-pink-1300: #982e62;
+    --bbt-color-pink-1400: #812754;
+    --bbt-color-pink-1500: #6d2147;
+    --bbt-color-pink-1600: #5a1c3a;
+    --bbt-color-pink-1700: #46152d;
+    --bbt-color-pink-1800: #330f21;
+    --bbt-color-pink-1900: #1f0a14;
+    --bbt-color-pink-200: #fdebf4;
+    --bbt-color-pink-300: #fbd7e9;
+    --bbt-color-pink-400: #f9c3dd;
+    --bbt-color-pink-500: #f7add1;
+    --bbt-color-pink-600: #f499c6;
+    --bbt-color-pink-700: #f282b9;
+    --bbt-color-pink-800: #f06aac;
+    --bbt-color-pink-900: #ed4d9c;
+    --bbt-color-purple-100: #fcfbff;
+    --bbt-color-purple-1000: #8e60f6;
+    --bbt-color-purple-1100: #7e54e0;
+    --bbt-color-purple-1200: #704ac7;
+    --bbt-color-purple-1300: #6341af;
+    --bbt-color-purple-1400: #543894;
+    --bbt-color-purple-1500: #462f7d;
+    --bbt-color-purple-1600: #3a2667;
+    --bbt-color-purple-1700: #2d1d4f;
+    --bbt-color-purple-1800: #201539;
+    --bbt-color-purple-1900: #140d23;
+    --bbt-color-purple-200: #f3eefe;
+    --bbt-color-purple-300: #e6dcfd;
+    --bbt-color-purple-400: #dacbfc;
+    --bbt-color-purple-500: #ceb9fb;
+    --bbt-color-purple-600: #c1a8fa;
+    --bbt-color-purple-700: #b496f9;
+    --bbt-color-purple-800: #a885f8;
+    --bbt-color-purple-900: #9b72f7;
+    --bbt-color-success-100: #e5fff2;
+    --bbt-color-success-1000: #00ff80;
+    --bbt-color-success-1100: #00e673;
+    --bbt-color-success-1200: #00cc66;
+    --bbt-color-success-1300: #00b359;
+    --bbt-color-success-1400: #00994d;
+    --bbt-color-success-1500: #008040;
+    --bbt-color-success-1600: #006633;
+    --bbt-color-success-1700: #004d26;
+    --bbt-color-success-1800: #00331a;
+    --bbt-color-success-1900: #001a0d;
+    --bbt-color-success-200: #ccffe5;
+    --bbt-color-success-300: #b3ffd9;
+    --bbt-color-success-400: #99ffcc;
+    --bbt-color-success-500: #80ffbf;
+    --bbt-color-success-600: #66ffb2;
+    --bbt-color-success-700: #4dffa6;
+    --bbt-color-success-800: #4dffa6;
+    --bbt-color-success-900: #1aff8c;
+    --bbt-color-warning-100: #fef8e6;
+    --bbt-color-warning-1000: #f9b806;
+    --bbt-color-warning-1100: #e0a606;
+    --bbt-color-warning-1200: #c79305;
+    --bbt-color-warning-1300: #ae8104;
+    --bbt-color-warning-1400: #956e04;
+    --bbt-color-warning-1500: #7c5c03;
+    --bbt-color-warning-1600: #634a03;
+    --bbt-color-warning-1700: #4b3702;
+    --bbt-color-warning-1800: #322501;
+    --bbt-color-warning-1900: #191201;
+    --bbt-color-warning-200: #fef1cd;
+    --bbt-color-warning-300: #fdeab4;
+    --bbt-color-warning-400: #fdeab4;
+    --bbt-color-warning-500: #fdeab4;
+    --bbt-color-warning-600: #fbd46a;
+    --bbt-color-warning-700: #fbcd51;
+    --bbt-color-warning-800: #fac638;
+    --bbt-color-warning-900: #f9bf1f;
+    --bbt-color-white-alpha-100: #fffffff0;
+    --bbt-color-white-alpha-200: #ffffffeb;
+    --bbt-color-white-alpha-25: #fffffffa;
+    --bbt-color-white-alpha-300: #ffffffcc;
+    --bbt-color-white-alpha-400: #ffffff8f;
+    --bbt-color-white-alpha-50: #fffffff5;
+    --bbt-color-white-alpha-500: #ffffff80;
+    --bbt-color-white-alpha-600: #ffffff59;
+    --bbt-color-white-alpha-700: #ffffff29;
+    --bbt-color-white-alpha-800: #ffffff14;
+    --bbt-color-white-alpha-900: #ffffff0a;
+    --bbt-color-white-alpha-950: #ffffff00;
+}
+
+:root.light-mode {
+    /* light Mode Colors */
+    --alpha-black-10: #0c0e0c1a;
+    --alpha-black-20: #0c0e0c33;
+    --alpha-black-30: #0c0e0c4d;
+    --alpha-black-40: #0c0e0c66;
+    --alpha-black-50: #0c0e0c80;
+    --alpha-black-60: #0c0e0c99;
+    --alpha-black-70: #0c0e0cb2;
+    --alpha-black-80: #0c0e0ccc;
+    --alpha-black-90: #0c0e0ce5;
+    --alpha-white-10: #ffffff1a;
+    --alpha-white-20: #ffffff33;
+    --alpha-white-30: #ffffff4d;
+    --alpha-white-40: #ffffff66;
+    --alpha-white-50: #ffffff80;
+    --alpha-white-60: #ffffff99;
+    --alpha-white-70: #ffffffb2;
+    --alpha-white-80: #ffffffcc;
+    --alpha-white-90: #ffffffe5;
+    --colors-background-bg-brand-primary: var(--bbt-color-brand-1300);
+    --colors-background-bg-primary: var(--bbt-color-base-white);
+    --colors-background-bg-primary-hover: var(--bbt-color-gray-light-mode-100);
+    --colors-background-bg-primary-solid: var(--bbt-color-gray-dark-mode-1700);
+    --colors-background-bg-quaternary: var(--bbt-color-gray-light-mode-300);
+    --colors-background-bg-secondary: var(--bbt-color-gray-light-mode-50);
+    --colors-background-bg-secondary-hover: var(--bbt-color-gray-light-mode-200);
+    --colors-background-bg-secondary-solid: #f9fafb;
+    --colors-background-bg-secondary-subtle: #f9fafb;
+    --colors-background-bg-tertiary: var(--bbt-color-gray-light-mode-100);
+    --colors-border-brand: var(--bbt-color-brand-1300);
+    --colors-border-disabled: var(--bbt-color-gray-light-mode-200);
+    --colors-border-disabled-subtle: var(--bbt-color-gray-light-mode-100);
+    --colors-border-error: var(--bbt-color-error-1000);
+    --colors-border-primary: var(--bbt-color-gray-light-mode-300);
+    --colors-border-secondary: var(--bbt-color-gray-light-mode-200);
+    --colors-border-success: var(--bbt-color-success-1300);
+    --colors-border-tertiary: var(--bbt-color-gray-light-mode-100);
+    --colors-border-warning: var(--bbt-color-warning-800);
+    --colors-foreground-fg-brand-primary: var(--bbt-color-brand-1300);
+    --colors-foreground-fg-brand-secondary: var(--bbt-color-brand-1200);
+    --colors-foreground-fg-disabled: var(--bbt-color-gray-light-mode-500);
+    --colors-foreground-fg-error-primary: var(--bbt-color-error-1000);
+    --colors-foreground-fg-error-secondary: var(--bbt-color-error-800);
+    --colors-foreground-fg-primary: var(--bbt-color-base-black);
+    --colors-foreground-fg-primary-hover: var(--bbt-color-gray-light-mode-1700);
+    --colors-foreground-fg-secondary: var(--bbt-color-gray-light-mode-1200);
+    --colors-foreground-fg-secondary-hover: var(--bbt-color-gray-light-mode-1100);
+    --colors-foreground-fg-success-primary: var(--bbt-color-success-1300);
+    --colors-foreground-fg-success-secondary: var(--bbt-color-brand-1200);
+    --colors-foreground-fg-tertiary: var(--bbt-color-gray-light-mode-800);
+    --colors-foreground-fg-tertiary-hover: var(--bbt-color-gray-light-mode-600);
+    --colors-foreground-fg-warning-primary: var(--bbt-color-warning-1000);
+    --colors-foreground-fg-warning-secondary: var(--bbt-color-warning-800);
+    --colors-foreground-fg-white: var(--bbt-color-base-white);
+    --colors-text-brand-primary: var(--bbt-color-brand-1300);
+    --colors-text-brand-secondary: var(--bbt-color-brand-1200);
+    --colors-text-brand-tertiary: var(--bbt-color-brand-1100);
+    --colors-text-disabled: var(--bbt-color-gray-light-mode-600);
+    --colors-text-error-primary: var(--bbt-color-error-700);
+    --colors-text-placeholder: var(--bbt-color-gray-light-mode-700);
+    --colors-text-primary: var(--bbt-color-base-black);
+    --colors-text-primary-on-brand: var(--bbt-color-base-white);
+    --colors-text-secondary: var(--bbt-color-gray-light-mode-1100);
+    --colors-text-secondary-hover: var(--bbt-color-gray-light-mode-1200);
+    --colors-text-secondary-on-brand: var(--bbt-color-brand-200);
+    --colors-text-success-primary: var(--bbt-color-success-1300);
+    --colors-text-tertiary: var(--bbt-color-gray-light-mode-900);
+    --colors-text-tertiary-hover: var(--bbt-color-gray-light-mode-1200);
+    --colors-text-tertiary-on-brand: var(--bbt-color-brand-300);
+    --colors-text-warning-primary: var(--bbt-color-warning-1000);
+    --colors-text-white: var(--bbt-color-base-white);
+    --component-badge-blue-bg: var(--bbt-color-blue-100);
+    --component-badge-blue-fg: var(--bbt-color-blue-800);
+    --component-badge-gray-bg: var(--bbt-color-gray-light-mode-100);
+    --component-badge-gray-fg: var(--bbt-color-gray-light-mode-1100);
+    --component-badge-green-bg: var(--bbt-color-success-100);
+    --component-badge-green-fg: var(--bbt-color-success-1300);
+    --component-badge-red-bg: var(--bbt-color-error-100);
+    --component-badge-red-fg: var(--bbt-color-error-700);
+    --component-badge-yellow-bg: var(--bbt-color-warning-100);
+    --component-badge-yellow-fg: var(--bbt-color-warning-1100);
+    --component-buttons-error-bg: var(--bbt-color-error-800);
+    --component-buttons-error-bg-hover: var(--bbt-color-error-900);
+    --component-buttons-error-border: var(--bbt-color-error-800);
+    --component-buttons-error-border-hover: var(--bbt-color-error-900);
+    --component-buttons-error-fg: var(--colors-foreground-fg-white);
+    --component-buttons-error-fg-hover: var(--colors-foreground-fg-white);
+    --component-buttons-error-fg-solid: var(--colors-foreground-fg-white);
+    --component-buttons-primary-bg: var(--colors-background-bg-brand-primary);
+    --component-buttons-primary-bg-disable: var(--bbt-color-brand-1100);
+    --component-buttons-primary-bg-hover: var(--bbt-color-brand-1500);
+    --component-buttons-primary-fg: var(--colors-foreground-fg-white);
+    --component-buttons-primary-fg-disable: var(--bbt-color-gray-light-mode-400);
+    --component-buttons-primary-fg-hover: var(--colors-foreground-fg-white);
+    --component-buttons-secondarry-bg: var(--bbt-color-gray-light-mode-100);
+    --component-buttons-secondarry-bg-hover: var(--bbt-color-gray-light-mode-300);
+    --component-buttons-secondarry-border: var(--bbt-color-gray-light-mode-700);
+    --component-buttons-secondarry-border-hover: var(--bbt-color-gray-light-mode-800);
+    --component-buttons-secondarry-fg: var(--bbt-color-gray-light-mode-1200);
+    --component-buttons-secondarry-fg-hover: var(--bbt-color-gray-light-mode-1300);
+    --component-buttons-tertiary-bg-hover: var(--bbt-color-gray-light-mode-300);
+    --component-buttons-tertiary-fg: var(--bbt-color-gray-light-mode-1200);
+    --component-buttons-tertiary-fg-hover: var(--bbt-color-gray-light-mode-1300);
+  
+    /* Text Styles */
+    --font-heading1-family: "Roboto";
+    --font-heading1-weight: 700;
+    --font-heading1-size: 32px;
+    --font-heading1-line-height: 40px;
+    --font-heading1-letter-spacing: 0.15px;
+
+    --font-heading2-family: "Roboto";
+    --font-heading2-weight: 700;
+    --font-heading2-size: 30px;
+    --font-heading2-line-height: 40px;
+    --font-heading2-letter-spacing: 0.15px;
+
+    --font-heading3-family: "Roboto";
+    --font-heading3-weight: 700;
+    --font-heading3-size: 28px;
+    --font-heading3-line-height: 40px;
+    --font-heading3-letter-spacing: 0.15px;
+
+    --font-body1-family: "Roboto";
+    --font-body1-weight: 400;
+    --font-body1-size: 16px;
+    --font-body1-line-height: 24px;
+    --font-body1-letter-spacing: 0.5px;
+  
+    /* Spacing */
+    --spacing-medium: 16px;
+    --radius-medium: 8px;
+}
+  
+  :root.dark-mode {
+    /* Dark Mode Colors */
+    --alpha-black-10: #ffffff1a;
+    --alpha-black-20: #ffffff33;
+    --alpha-black-30: #ffffff4d;
+    --alpha-black-40: #ffffff66;
+    --alpha-black-50: #ffffff80;
+    --alpha-black-60: #ffffff99;
+    --alpha-black-70: #ffffffb2;
+    --alpha-black-80: #ffffffcc;
+    --alpha-black-90: #ffffffe5;
+    --alpha-white-10: #0c0e0c1a;
+    --alpha-white-20: #0c0e0c33;
+    --alpha-white-30: #0c0e0c4d;
+    --alpha-white-40: #0c0e0c66;
+    --alpha-white-50: #0c0e0c80;
+    --alpha-white-60: #0c0e0c99;
+    --alpha-white-70: #0c0e0cb2;
+    --alpha-white-80: #0c0e0ccc;
+    --alpha-white-90: #0c0e0ce5;
+    --colors-background-bg-brand-primary: var(--bbt-color-brand-1300);
+    --colors-background-bg-primary: var(--bbt-color-gray-dark-mode-1700);
+    --colors-background-bg-primary-hover: var(--bbt-color-gray-dark-mode-1600);
+    --colors-background-bg-primary-solid: var(--bbt-color-gray-dark-mode-1800);
+    --colors-background-bg-quaternary: var(--bbt-color-gray-dark-mode-1400);
+    --colors-background-bg-secondary: var(--bbt-color-gray-dark-mode-1600);
+    --colors-background-bg-secondary-hover: var(--bbt-color-gray-dark-mode-1500);
+    --colors-background-bg-secondary-solid: #161b26;
+    --colors-background-bg-secondary-subtle: #161b26;
+    --colors-background-bg-tertiary: var(--bbt-color-gray-dark-mode-1500);
+    --colors-border-brand: var(--bbt-color-brand-1300);
+    --colors-border-disabled: var(--bbt-color-gray-dark-mode-1500);
+    --colors-border-disabled-subtle: var(--bbt-color-gray-dark-mode-800);
+    --colors-border-error: var(--bbt-color-error-800);
+    --colors-border-primary: var(--bbt-color-gray-dark-mode-1500);
+    --colors-border-secondary: var(--bbt-color-gray-dark-mode-1200);
+    --colors-border-success: var(--bbt-color-success-1300);
+    --colors-border-tertiary: var(--bbt-color-gray-dark-mode-900);
+    --colors-border-warning: var(--bbt-color-warning-600);
+    --colors-foreground-fg-brand-primary: var(--bbt-color-brand-1300);
+    --colors-foreground-fg-brand-secondary: var(--bbt-color-brand-1500);
+    --colors-foreground-fg-disabled: var(--bbt-color-gray-dark-mode-1300);
+    --colors-foreground-fg-error-primary: var(--bbt-color-error-800);
+    --colors-foreground-fg-error-secondary: var(--bbt-color-error-1000);
+    --colors-foreground-fg-primary: var(--colors-base-white);
+    --colors-foreground-fg-primary-hover: var(--bbt-color-gray-dark-mode-300);
+    --colors-foreground-fg-secondary: var(--bbt-color-gray-dark-mode-400);
+    --colors-foreground-fg-secondary-hover: var(--bbt-color-gray-dark-mode-600);
+    --colors-foreground-fg-success-primary: var(--bbt-color-success-1300);
+    --colors-foreground-fg-success-secondary: var(--bbt-color-success-1500);
+    --colors-foreground-fg-tertiary: var(--bbt-color-gray-dark-mode-900);
+    --colors-foreground-fg-tertiary-hover: var(--bbt-color-gray-dark-mode-1100);
+    --colors-foreground-fg-warning-primary: var(--bbt-color-warning-600);
+    --colors-foreground-fg-warning-secondary: var(--bbt-color-warning-900);
+    --colors-foreground-fg-white: var(--bbt-color-base-white);
+    --colors-text-brand-primary: var(--bbt-color-brand-1300);
+    --colors-text-brand-secondary: var(--bbt-color-brand-1500);
+    --colors-text-brand-tertiary: var(--bbt-color-brand-1700);
+    --colors-text-disabled: var(--bbt-color-gray-dark-mode-1300);
+    --colors-text-error-primary: var(--bbt-color-error-800);
+    --colors-text-placeholder: var(--bbt-color-gray-dark-mode-900);
+    --colors-text-primary: var(--bbt-color-base-white);
+    --colors-text-primary-on-brand: var(--bbt-color-base-white);
+    --colors-text-secondary: var(--bbt-color-gray-dark-mode-400);
+    --colors-text-secondary-hover: var(--bbt-color-gray-dark-mode-600);
+    --colors-text-secondary-on-brand: var(--bbt-color-gray-dark-mode-400);
+    --colors-text-success-primary: var(--bbt-color-success-1200);
+    --colors-text-tertiary: var(--bbt-color-gray-dark-mode-900);
+    --colors-text-tertiary-hover: var(--bbt-color-gray-dark-mode-1100);
+    --colors-text-tertiary-on-brand: var(--bbt-color-gray-dark-mode-900);
+    --colors-text-warning-primary: var(--bbt-color-warning-600);
+    --colors-text-white: var(--bbt-color-base-white);
+    --component-badge-blue-bg: var(--bbt-color-blue-1700);
+    --component-badge-blue-fg: var(--bbt-color-blue-700);
+    --component-badge-gray-bg: var(--bbt-color-gray-dark-mode-1800);
+    --component-badge-gray-fg: var(--bbt-color-gray-dark-mode-700);
+    --component-badge-green-bg: var(--bbt-color-success-1700);
+    --component-badge-green-fg: var(--bbt-color-success-1300);
+    --component-badge-red-bg: var(--bbt-color-error-1700);
+    --component-badge-red-fg: var(--bbt-color-error-800);
+    --component-badge-yellow-bg: var(--bbt-color-warning-1700);
+    --component-badge-yellow-fg: var(--bbt-color-warning-900);
+    --component-buttons-error-bg: var(--bbt-color-error-700);
+    --component-buttons-error-bg-hover: var(--bbt-color-error-600);
+    --component-buttons-error-border: var(--bbt-color-error-800);
+    --component-buttons-error-border-hover: var(--bbt-color-error-600);
+    --component-buttons-error-fg: var(--colors-foreground-fg-primary);
+    --component-buttons-error-fg-hover: var(--colors-foreground-fg-primary-hover);
+    --component-buttons-error-fg-solid: var(--colors-foreground-fg-primary-hover);
+    --component-buttons-primary-bg: var(--colors-background-bg-brand-primary);
+    --component-buttons-primary-bg-disable: var(--bbt-color-brand-1600);
+    --component-buttons-primary-bg-hover: var(--bbt-color-brand-1500);
+    --component-buttons-primary-fg: var(--colors-foreground-fg-white);
+    --component-buttons-primary-fg-disable: var(--bbt-color-gray-dark-mode-700);
+    --component-buttons-primary-fg-hover: var(--colors-foreground-fg-primary-hover);
+    --component-buttons-secondarry-bg: var(--bbt-color-gray-dark-mode-1500);
+    --component-buttons-secondarry-bg-hover: var(--bbt-color-gray-dark-mode-1600);
+    --component-buttons-secondarry-border: var(--bbt-color-gray-dark-mode-1100);
+    --component-buttons-secondarry-border-hover: var(--bbt-color-gray-dark-mode-1200);
+    --component-buttons-secondarry-fg: var(--bbt-color-base-white);
+    --component-buttons-secondarry-fg-hover: var(--bbt-color-gray-dark-mode-100);
+    --component-buttons-tertiary-bg-hover: var(--colors-background-bg-primary-hover);
+    --component-buttons-tertiary-fg: var(--colors-foreground-fg-primary);
+    --component-buttons-tertiary-fg-hover: var(--colors-foreground-fg-primary-hover);
+
+        /* Text Styles */
+    --font-heading1-family: "Roboto";
+    --font-heading1-weight: 700;
+    --font-heading1-size: 32px;
+    --font-heading1-line-height: 40px;
+    --font-heading1-letter-spacing: 0.15px;
+
+    --font-heading2-family: "Roboto";
+    --font-heading2-weight: 700;
+    --font-heading2-size: 30px;
+    --font-heading2-line-height: 40px;
+    --font-heading2-letter-spacing: 0.15px;
+
+    --font-heading3-family: "Roboto";
+    --font-heading3-weight: 700;
+    --font-heading3-size: 28px;
+    --font-heading3-line-height: 40px;
+    --font-heading3-letter-spacing: 0.15px;
+
+    --font-body1-family: "Roboto";
+    --font-body1-weight: 400;
+    --font-body1-size: 16px;
+    --font-body1-line-height: 24px;
+    --font-body1-letter-spacing: 0.5px;
+
+    /* Spacing */
+    --spacing-medium: 16px;
+    --radius-medium: 8px;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.guideline-output {
+    margin-top: 20px;
+}
+
+.guideline-section {
+    margin-bottom: 20px;
+}
+
+.property {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.property-name {
+    width: 200px;
+    font-weight: bold;
+}
+
+.property-value {
+    flex: 1;
+}
+
+.color-box {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid #001a0d;
+}
+
+.contrast-checker {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contrast-checker label {
+    margin-bottom: 5px;
+}
+
+.contrast-checker input {
+    margin-bottom: 10px;
+}
+
+.contrast-result {
+    margin-top: 20px;
+}
+
+.contrast-ratio {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contrast-rating {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contrast-description {
+    font-size: 16px;
+}
+
+#fileInput {
+    margin-bottom: 20px;
+}
+
+#generateButton {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#guideline {
+    margin-top: 40px;
+    text-align: left;
+}
+
+#contrastChecker {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.how-does-it-work {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.how-does-it-work h2 {
+    margin-bottom: 10px;
+}
+
+.how-does-it-work p {
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: #ffffff;
+    color: var(--colors-text-primary);
+    font-family: Roboto, sans-serif;
+    padding: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /*  Adjusted for content to be at the top */
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 100px; /* Added padding to the top */
+}
+
+.sticky-section {
+    position: sticky;
+    top: 0;
+    background-color: var(--bbt-color-base-white);
+    padding: 16px;
+    z-index: 1000;
+    width: 100%;
+    text-align: center; /* Center align text */
+}
+
+.scroll-section {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+button {
+    background-color: var(--bbt-color-brand-1300);
+    color: var(--colors-foreground-fg-white);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--bbt-color-brand-1400);
+}
+
+input[type="file"] {
+    margin-top: 8px;
+}
+
+.guideline-section {
+    margin-bottom: 20px;
+    max-width: 800px;
+    width: 100%;
+    text-align: left;
+}
+
+.guideline-section h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.guideline-section .property {
+    background-color: var(--colors-background-bg-primary);
+    border: 1px solid var(--colors-border-primary);
+    padding: 8px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+}
+
+#guidelineOutput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+    
+    /* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+    padding: 8px;
+}
+
+.guideline-section {
+    padding: 0 8px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+button {
+    padding: 8px 12px;
+}
+
+}
+
+@media (max-width: 480px) {
+h1 {
+font-size: 24px;
+}
+
+.guideline-section {
+    padding: 0 4px;
+}
+
+button {
+    padding: 6px 10px;
+}
+}
